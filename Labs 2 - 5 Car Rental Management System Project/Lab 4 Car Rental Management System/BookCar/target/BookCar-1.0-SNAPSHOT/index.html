@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Booking Page</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $(".datepicker").datepicker({
+                dateFormat: "yy-mm-dd"
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://source.unsplash.com/1920x1080/?luxury-car') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2, h3 {
+            color: #000;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .datepicker {
+            width: 80px;
+            text-align: center;
+        }
+
+        input[type="button"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 5px 10px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome to Car Rental!</h2>
+        <p>This is your booking page where you can manage your reservations.</p>
+
+        <h3>Your Booking Details:</h3>
+        <form>
+            <table>
+                <tr>
+                    <th>Car Model Type</th>
+                    <th>Rental Date</th>
+                    <th>Return Date</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="carModel">
+                            <option value="SUV">SUV</option>
+                            <option value="Compact">Compact</option>
+                            <option value="Sedan">Sedan</option>
+                            <option value="Luxury Vehicle">Luxury Vehicle</option>
+                            <option value="Trucks">Trucks</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </td>
+                    <td><input type="text" class="datepicker" name="rentalDate" value="2024-02-10"></td>
+                    <td><input type="text" class="datepicker" name="returnDate" value="2024-02-15"></td>
+                    <td>
+                        
+                         <a href="booking.jsp">
+                           <input type="button" value="Book">
+                        </a>
+                        
+                        <a href="Extend.jsp">
+                           <input type="button" value="Extend">
+                        </a>
+                      
+                         <a href="Cancel.jsp">
+                           <input type="button" value="Cancel">
+                        </a>              
+                       
+                        <a href="Availability.jsp">
+                           <input type="button" value="Check Availability">
+                        </a>
+                        
+                    </td>
+                </tr>
+                <!-- More static rows can be added here if needed -->
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
