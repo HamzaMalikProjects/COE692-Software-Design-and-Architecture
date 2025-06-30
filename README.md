@@ -1,3 +1,11 @@
+# CPS510 – Database Systems I
+
+**Course:** CPS510 – Database Systems I  
+**Institution:** Toronto Metropolitan University  
+**Team:** Hamza Malik, Omer Zulfiqar, Amanat Sodhi  
+
+---
+
 # 🚗 COE692 – Software Design and Architecture 
 
 **Course:** COE692 – Software Design and Architecture
