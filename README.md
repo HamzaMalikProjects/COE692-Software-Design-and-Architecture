@@ -7,15 +7,6 @@
 
 ---
 
-# 🚗 COE692 – Software Design and Architecture 
-
-**Course:** COE692 – Software Design and Architecture
-**Institution:** Toronto Metropolitan University  
-**Team:** Hamza Malik, Kevin Bhatt
-**Focus**: System-Level Software Design, Architecture Patterns, Embedded Systems, EDA Tools
-
----
-
 ## 📘 Overview  
 This repository contains all course materials and project work completed for **COE692 – Software Design and Architecture**. The course emphasizes scalable software system design, exploring architecture patterns, design methodologies, and embedded applications. Students gained hands-on experience building modular, maintainable systems aligned with modern software engineering principles.
 
