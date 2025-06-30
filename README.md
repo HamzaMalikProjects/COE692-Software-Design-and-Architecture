@@ -3,6 +3,7 @@
 **Course:** COE692 – Software Design and Architecture  
 **Institution:** Toronto Metropolitan University  
 **Team:** Hamza Malik, Kevin Bhatt  
+**Focus**: System-Level Software Design, Architecture Patterns, Embedded Systems, EDA Tools
 
 ---
 
