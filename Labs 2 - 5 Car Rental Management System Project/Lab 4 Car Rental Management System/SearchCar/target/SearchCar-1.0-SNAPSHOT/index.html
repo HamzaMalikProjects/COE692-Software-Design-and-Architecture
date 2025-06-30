@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchCar Rental Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://source.unsplash.com/1920x1080/?luxury-car');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation bar styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            padding: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Main banner styles */
+        .banner {
+            text-align: center;
+            padding: 4rem 0;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .search-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .search-box input,
+        .search-box select {
+            padding: 0.5rem;
+            margin: 0.25rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-box button {
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            background-color: #5cb85c;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Footer styles */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Additional styles */
+        /* Add your additional styles here */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Car Rental</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="banner" id="home">
+        <h1>Search Cars!</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Pick-up Location">
+            <input type="date" id="pick-up-date" placeholder="Pick-up Date">
+            <input type="date" id="drop-off-date" placeholder="Drop-off Date">
+            <select>
+                <option value="suv">SUV</option>
+                <option value="sedan">Compact</option>
+                <option value="compact">Sedan</option>
+                <option value="compact">Luxury Vehicle</option>
+                <option value="compact">Trucks</option>
+                
+                <!-- More car types
+
+                <!-- ... -->
+                <option value="convertible">Convertible</option>
+                <!-- Add more car types as needed -->
+            </select>
+            <button type="submit">Search Cars</button>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Car Rental Service. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Here you can add your JavaScript code
+        // For example, handling the form submission, validating dates, etc.
+
+        // Sample form submission handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchForm = document.querySelector('.search-box button');
+            searchForm.addEventListener('click', function(event) {
+                event.preventDefault();
+                // Perform search and navigate to the results page
+                alert('Search functionality will go here!');
+            });
+        });
+    </script>
+</body>
+</html>
